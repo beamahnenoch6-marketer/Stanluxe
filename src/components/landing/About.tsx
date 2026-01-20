@@ -5,8 +5,9 @@ const About = () => {
         {/* Section Header */}
         <div className="text-center mb-14">
           <h2 className="font-heading text-3xl md:text-4xl text-primary mb-4">
-            About BaileyPrimeStay
+            About StanLuxeProperty
           </h2>
+          <p className="text-gold font-semibold">EXPERIENCE, NOT JUST PROPERTY</p>
         </div>
 
         {/* Content Grid */}
@@ -14,26 +15,31 @@ const About = () => {
           {/* About Content */}
           <div className="space-y-6">
             <p className="text-muted-foreground text-sm leading-relaxed">
-              BaileyPrimeStay is a short-stay co-hosting and property management brand focused on delivering well-managed, comfortable, and reliable Airbnb experiences.
+              StanLuxeProperty is a premium short-stay and property management brand dedicated to delivering exceptional living experiences and reliable operational solutions within luxury residential environments.
             </p>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              We specialize in the day-to-day management of short-stay apartments ensuring each space is properly prepared, cleaned, well presented, secured, and consistently maintained for guest comfort. Our approach is structured, calm, and detail-driven, allowing guests to enjoy a smooth and stress-free stay from check-in to check-out.
+              Our role is to manage the full short-stay experience from bookings and guest communication to housekeeping coordination and maintenance supervision — ensuring guests enjoy comfort and convenience, and property partners benefit from efficient, transparent operations.
             </p>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              At BaileyPrimeStay, we prioritize clear communication, professionalism, thoughtful presentation, and operational consistency. Every stay is managed with respect for both guests and property owners.
+              At StanLuxeProperty, we are committed to professionalism, quality service, and long-term peace of mind and premium returns for our partners.
             </p>
           </div>
 
-          {/* Partnership Content */}
+          {/* Partnership / Mission / Vision */}
           <div className="space-y-6">
-            <h3 className="font-heading text-2xl md:text-3xl text-primary">
-              Our Partnership
-            </h3>
+            <h3 className="font-heading text-2xl md:text-3xl text-primary">Our Partnership</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              BaileyPrimeStay currently operates in partnership with Award winning Douglas Luxury Apartments, managing select units in East Legon, Shiashie, Adenta and more as part of our short-stay portfolio.
+              We operate in partnership with the award-winning Douglas Luxury Apartments, managing selected units across prime locations including East Legon, Shiashie, and Adenta as part of our short-stay portfolio. Through this collaboration, we provide professional hospitality services while maintaining the high standards associated with luxury apartment living.
             </p>
+
+            <h3 className="font-heading text-2xl md:text-3xl text-primary">Our Mission</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Through this partnership, we oversee guest experience, coordination, and operational standards to ensure each apartment meets our quality expectations and delivers a comfortable short-stay experience.
+              To deliver premium short-stay experiences while maximizing property value through professional management and trusted partnerships.
+            </p>
+
+            <h3 className="font-heading text-2xl md:text-3xl text-primary">Our Vision</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              To become a leading hospitality management partner for luxury residential developments across Africa.
             </p>
           </div>
         </div>

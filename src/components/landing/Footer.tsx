@@ -1,3 +1,7 @@
+import logo from "@/assets/logo.png";
+
+
+
 const Footer = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -7,18 +11,17 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-primary py-16 px-6">
+    <footer className="bg-black py-16 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {/* Logo */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
-                <span className="text-primary font-bold text-lg">B</span>
-              </div>
-            </div>
+                <div className="relative ">
+                  <img src={logo} alt="StanLuxeProperty" className="h-10 md:h-14 w-auto rounded-full" />
+                </div>
+              <br />
             <p className="text-white/50 text-xs">
-              © {new Date().getFullYear()} BaileyPrimeStay, Inc.
+              © {new Date().getFullYear()} StanLuxeProperty, Inc.
               <br />
               All rights reserved.
             </p>

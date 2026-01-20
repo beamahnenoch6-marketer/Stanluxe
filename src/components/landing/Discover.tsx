@@ -25,7 +25,7 @@ const Discover = () => {
             </p>
             <Button 
               onClick={() => scrollToSection("apartments")}
-              className="bg-gold hover:bg-gold-light text-primary font-semibold px-8 py-3 rounded-none"
+              className="bg-gold hover:bg-gold-light text-white font-semibold px-8 py-3 rounded-none"
             >
               Explore Apartments
             </Button>
@@ -41,11 +41,8 @@ const Discover = () => {
               />
             </div>
             <div className="absolute -bottom-4 -right-4 md:bottom-4 md:right-4">
-              <Button 
-                onClick={() => scrollToSection("contact")}
-                className="bg-gold hover:bg-gold-light text-primary font-semibold px-6 py-2.5 rounded-none shadow-lg"
-              >
-                Book Now
+              <Button asChild className="bg-gold hover:bg-gold-light text-white font-semibold px-6 py-2.5 rounded-none shadow-lg">
+                <a href="https://wa.me/233502437351" target="_blank" rel="noopener noreferrer">Book Now</a>
               </Button>
             </div>
           </div>

@@ -22,28 +22,26 @@ const Hero = () => {
       <div className="fixed inset-0 bg-primary/50 -z-10" />
       
       {/* Logo */}
-      <div className="absolute top-6 left-6 z-20">
-        <img src={logo} alt="BaileyPrimeStay" className="h-10 md:h-14 w-auto rounded-full" />
-      </div>
+      {/* <div className="absolute top-6 left-6 z-20">
+        <img src={logo} alt="StanLuxeProperty" className="h-10 md:h-14 w-auto rounded-full" />
+      </div> */}
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl text-white mb-4">
-          Book a Stay in
-          <br />
-          <span className="text-gold">Accra's Best</span>
+          <div className="flex justify-center mb-4">
+        <img src={logo} alt="StanLuxeProperty"  />
+      </div>
+          {/* <br />
+          <span className="text-gold">EXPERIENCE, NOT JUST PROPERTY</span> */}
         </h1>
-        <p className="text-sm md:text-base text-white/90 font-light max-w-2xl mx-auto mb-8">
-          Explore a curated selection of short-stay apartments managed by BaileyPrimeStay within the Douglas Luxury Apartments portfolio.
-        </p>
+        {/* <p className="text-sm md:text-base text-white/90 font-light max-w-2xl mx-auto mb-8">
+          Premium short-stay and property management delivering exceptional living experiences across Douglas Luxury Apartments.
+        </p> */}
         
         {/* CTA Button */}
-        <Button 
-          onClick={() => scrollToSection("contact")}
-          size="lg" 
-          className="bg-gold hover:bg-gold-light text-primary font-semibold px-10 py-6 text-lg rounded-none"
-        >
-          Book Now
+        <Button asChild size="lg" className="bg-gold hover:bg-gold-light text-white font-semibold px-10 py-6 text-lg rounded-none">
+          <a href="https://wa.me/233502437351" target="_blank" rel="noopener noreferrer">Book Now</a>
         </Button>
       </div>
     </section>

@@ -21,11 +21,8 @@ const Contact = () => {
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               At Douglas Luxury Apartments, we pride ourselves on delivering exceptional service and a seamless booking experience. Whether you're traveling for business or leisure, our team is dedicated to ensuring your stay is comfortable and memorable.
             </p>
-            <Button 
-              onClick={() => scrollToSection("booking")}
-              className="bg-gold hover:bg-gold-light text-primary font-semibold px-8 py-3 rounded-none"
-            >
-              Inquire Now
+            <Button asChild className="bg-gold hover:bg-gold-light text-white font-semibold px-8 py-3 rounded-none">
+              <a href="https://wa.me/233502437351" target="_blank" rel="noopener noreferrer">Inquire Now</a>
             </Button>
           </div>
 

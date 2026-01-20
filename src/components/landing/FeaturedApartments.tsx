@@ -1,12 +1,12 @@
-import apartment1 from "@/assets/apartment-1.jpg";
+import apartment5 from "@/assets/apartment-5.jpg";
 import apartment2 from "@/assets/apartment-2.jpg";
 import apartment3 from "@/assets/apartment-3.jpg";
-import heroImage from "@/assets/hero-apartment.jpg";
+import apartment4 from "@/assets/apartment-4.jpg";
 
 const apartments = [
   {
     id: 1,
-    image: apartment1,
+    image: apartment5,
     title: "Douglas Luxury East Legon",
     location: "6 apartments",
   },
@@ -18,7 +18,7 @@ const apartments = [
   },
   {
     id: 3,
-    image: heroImage,
+    image: apartment4,
     title: "Douglas Luxury Adenta",
     location: "5 apartments",
   },
