@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BaileyPrimeStay Design System - Navy Blue, Gold & White */
+
+@layer base {
+  :root {
+    /* Color Palette: Navy Blue, Gold, White */
+    --background: 0 0% 100%;
+    --foreground: 220 50% 15%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 220 50% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 50% 15%;
+    
+    /* Primary: Navy Blue */
+    --primary: 220 50% 20%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary: Gold (lighter) */
+    --secondary: 43 74% 58%;
+    --secondary-foreground: 220 50% 15%;
+    
+    /* Muted: Light Gray */
+    --muted: 220 20% 96%;
+    --muted-foreground: 220 30% 40%;
+    
+    /* Accent: Gold (lighter) */
+    --accent: 43 74% 58%;
+    --accent-foreground: 220 50% 15%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 220 20% 88%;
+    --input: 220 20% 95%;
+    --ring: 43 74% 58%;
+
+    --radius: 0.75rem;
+
+    /* Custom Colors */
+    --navy: 220 50% 20%;
+    --navy-light: 220 40% 30%;
+    --gold: 43 74% 58%;
+    --gold-light: 43 74% 68%;
+    --cream: 35 30% 95%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(220 50% 15% / 0.85), hsl(220 50% 20% / 0.7));
+    --gradient-gold: linear-gradient(135deg, hsl(43 74% 58%), hsl(43 74% 68%));
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 40px -10px hsl(220 50% 20% / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(220 50% 20% / 0.1);
+    
+    /* Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gloock', serif;
+  }
+  
+  /* Hero Overlay */
+  .hero-overlay {
+    background: var(--gradient-hero);
+  }
+  
+  /* Gold Gradient Button */
+  .btn-gold {
+    background: var(--gradient-gold);
+    @apply text-primary font-semibold px-8 py-4 rounded-lg transition-all duration-300;
+  }
+  
+  .btn-gold:hover {
+    @apply scale-105 shadow-lg;
+  }
+  
+  /* Reveal Animation */
+  .reveal {
+    @apply opacity-0 translate-y-8;
+    animation: reveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  
+  .reveal-delayed {
+    @apply opacity-0 translate-y-8;
+    animation: reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+  }
+  
+  @keyframes reveal {
+    to {
+      @apply opacity-100 translate-y-0;
+    }
+  }
+  
+  /* Section Styling */
+  .section-padding {
+    @apply py-20 md:py-28 px-6;
+  }
+}
